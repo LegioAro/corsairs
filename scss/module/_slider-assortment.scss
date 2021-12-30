@@ -1,0 +1,14 @@
+.slider-assortment {
+    position: relative;
+
+    .slider-arrow {
+        @include sliderArrow($pageColorStyle, $top: 25%, $height: 60px, $translateY: 0);
+    }
+
+    &.swiper__nocomplete {
+        width: 100%;
+        .swiper-wrapper {
+            transform: none;
+        }
+    }
+}

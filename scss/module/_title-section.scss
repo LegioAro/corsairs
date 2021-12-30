@@ -1,0 +1,33 @@
+.title-section {
+    font-weight: bold;
+    font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1920 - 320)));
+    color: #ffffff;
+    padding-left: 25px;
+    position: relative;
+    span {
+        color: $pageColorStyle;
+        position: relative;
+        z-index: 1;
+    }
+    p {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__decoration {
+        width: 100%;
+        max-width: 34px;
+        height: 34px;
+        position: absolute;
+        left: 0;
+        top: -17px;
+        pointer-events: none;
+    }
+}
+
+@media (min-width: 1920px) {
+    .title-section {
+        font-size: 24px;
+    }
+}

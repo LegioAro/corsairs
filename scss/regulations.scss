@@ -1,0 +1,48 @@
+////////////////////////////////////
+//total
+
+@import "total/_variables";
+@import "total/_reset";
+@import "total/_fonts";
+
+////////////////////////////////////
+//module
+
+@import "module/_burger";
+@import "module/_title";
+@import "module/_title-section";
+@import "module/_link";
+@import "module/_tab";
+@import "module/_slider-assortment";
+@import "module/_shop-item";
+@import "module/_btn";
+@import "module/_slider-arrow";
+@import "module/_content";
+@import "module/sidebar/_sidebar";
+
+////////////////////////////////////
+//module sidebar
+
+@import "module/sidebar/_navigation";
+
+////////////////////////////////////
+//block
+
+@import "block/_header";
+@import "block/_cover";
+@import "block/_assortment";
+@import "block/_regulations";
+@import "block/_article";
+@import "block/_footer";
+
+@media (max-width: 400px) {
+    .regulations-page {
+        .cover {
+            .title {
+                &__decore-block {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.slider-arrow {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(30, 30, 30, 0.7);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    &.swiper-button-disabled {
+        display: none;
+    }
+    @include sliderArrow($pageColorStyle);
+}

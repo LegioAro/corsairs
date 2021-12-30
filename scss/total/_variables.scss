@@ -1,0 +1,29 @@
+$pageColorStyle: #f9b00b !global;
+
+@mixin sliderArrow(
+    $hoverBackgroundColor,
+    $top: 50%,
+    $left: 0,
+    $right: 0,
+    $translateY: -50%,
+    $maxWidth: 55px,
+    $height: 130px,
+    $fontSize: 26px
+) {
+    top: $top;
+    transform: translateY($translateY);
+    max-width: $maxWidth;
+    height: $height;
+    &:hover {
+        background-color: rgba($hoverBackgroundColor, 0.7);
+    }
+    span {
+        font-size: $fontSize;
+    }
+    &__prev {
+        left: $left;
+    }
+    &__next {
+        right: $right;
+    }
+}

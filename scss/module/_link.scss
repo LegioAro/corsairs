@@ -1,0 +1,13 @@
+.link {
+    transition: 0.3s;
+    p {
+        display: inline-block;
+        margin-right: 5px;
+    }
+    span {
+        font-size: 12px;
+    }
+    &:hover {
+        color: $pageColorStyle;
+    }
+}
